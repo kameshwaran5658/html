@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Course | Practice Quiz 2</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .quiz-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .result {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .question input[type="radio"]:checked + label {
+            color: red;
+        }
+        .incorrect {
+            color: red;
+        }
+        .correct {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Course</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="quiz-container">
+            <h2>HTML Course | Practice Quiz 2</h2>
+            <form id="quiz-form">
+                <div class="question">
+                    <label>1. What is the correct HTML element for defining important text?</label>
+                    <input type="radio" name="q1" value="A"> &lt;strong&gt;<br>
+                    <input type="radio" name="q1" value="B"> &lt;important&gt;<br>
+                    <input type="radio" name="q1" value="C"> &lt;bold&gt;<br>
+                    <input type="radio" name="q1" value="D"> &lt;em&gt;<br>
+                </div>
+                <div class="question">
+                    <label>2. Which HTML tag is used for inserting a horizontal line?</label>
+                    <input type="radio" name="q2" value="A"> &lt;hr&gt;<br>
+                    <input type="radio" name="q2" value="B"> &lt;line&gt;<br>
+                    <input type="radio" name="q2" value="C"> &lt;break&gt;<br>
+                    <input type="radio" name="q2" value="D"> &lt;hline&gt;<br>
+                </div>
+                <div class="question">
+                    <label>3. Which HTML tag is used to display a table header?</label>
+                    <input type="radio" name="q3" value="A"> &lt;th&gt;<br>
+                    <input type="radio" name="q3" value="B"> &lt;tr&gt;<br>
+                    <input type="radio" name="q3" value="C"> &lt;td&gt;<br>
+                    <input type="radio" name="q3" value="D"> &lt;thead&gt;<br>
+                </div>
+                <div class="question">
+                    <label>4. How do you specify the background color of a page?</label>
+                    <input type="radio" name="q4" value="A"> &lt;body style="background-color:#FFFFFF"&gt;<br>
+                    <input type="radio" name="q4" value="B"> &lt;background color="#FFFFFF"&gt;<br>
+                    <input type="radio" name="q4" value="C"> &lt;body bgcolor="#FFFFFF"&gt;<br>
+                    <input type="radio" name="q4" value="D"> &lt;body color="#FFFFFF"&gt;<br>
+                </div>
+                <div class="question">
+                    <label>5. What attribute is used to specify an alternative text for an image?</label>
+                    <input type="radio" name="q5" value="A"> alt<br>
+                    <input type="radio" name="q5" value="B"> src<br>
+                    <input type="radio" name="q5" value="C"> title<br>
+                    <input type="radio" name="q5" value="D"> href<br>
+                </div>
+                <div class="question">
+                    <label>6. Which HTML element is used to create a section in a document?</label>
+                    <input type="radio" name="q6" value="A"> &lt;section&gt;<br>
+                    <input type="radio" name="q6" value="B"> &lt;div&gt;<br>
+                    <input type="radio" name="q6" value="C"> &lt;article&gt;<br>
+                    <input type="radio" name="q6" value="D"> &lt;container&gt;<br>
+                </div>
+                <div class="question">
+                    <label>7. Which tag is used to define a list item in an unordered list?</label>
+                    <input type="radio" name="q7" value="A"> &lt;li&gt;<br>
+                    <input type="radio" name="q7" value="B"> &lt;list&gt;<br>
+                    <input type="radio" name="q7" value="C"> &lt;ul&gt;<br>
+                    <input type="radio" name="q7" value="D"> &lt;item&gt;<br>
+                </div>
+                <div class="question">
+                    <label>8. What is the purpose of the &lt;meta&gt; tag in HTML?</label>
+                    <input type="radio" name="q8" value="A"> To specify metadata<br>
+                    <input type="radio" name="q8" value="B"> To define content<br>
+                    <input type="radio" name="q8" value="C"> To include scripts<br>
+                    <input type="radio" name="q8" value="D"> To create links<br>
+                </div>
+                <div class="question">
+                    <label>9. How do you define a text area in HTML?</label>
+                    <input type="radio" name="q9" value="A"> &lt;textarea&gt;<br>
+                    <input type="radio" name="q9" value="B"> &lt;input type="text"&gt;<br>
+                    <input type="radio" name="q9" value="C"> &lt;input type="textarea"&gt;<br>
+                    <input type="radio" name="q9" value="D"> &lt;textarea&gt;<br>
+                </div>
+                <div class="question">
+                    <label>10. What HTML element is used for a table cell?</label>
+                    <input type="radio" name="q10" value="A"> &lt;td&gt;<br>
+                    <input type="radio" name="q10" value="B"> &lt;cell&gt;<br>
+                    <input type="radio" name="q10" value="C"> &lt;tr&gt;<br>
+                    <input type="radio" name="q10" value="D"> &lt;table&gt;<br>
+                </div>
+                <div class="question">
+                    <label>11. How do you add comments in HTML?</label>
+                    <input type="radio" name="q11" value="A"> &lt;!-- comment --&gt;<br>
+                    <input type="radio" name="q11" value="B"> &lt;comment&gt;<br>
+                    <input type="radio" name="q11" value="C"> &lt;!-- comment /--&gt;<br>
+                    <input type="radio" name="q11" value="D"> &lt;# comment #&gt;<br>
+                </div>
+                <div class="question">
+                    <label>12. What is the default value of the display property in HTML?</label>
+                    <input type="radio" name="q12" value="A"> block<br>
+                    <input type="radio" name="q12" value="B"> inline<br>
+                    <input type="radio" name="q12" value="C"> none<br>
+                    <input type="radio" name="q12" value="D"> flex<br>
+                </div>
+                <div class="question">
+                    <label>13. Which HTML tag is used to define a definition list?</label>
+                    <input type="radio" name="q13" value="A"> &lt;dl&gt;<br>
+                    <input type="radio" name="q13" value="B"> &lt;list&gt;<br>
+                    <input type="radio" name="q13" value="C"> &lt;def&gt;<br>
+                    <input type="radio" name="q13" value="D"> &lt;definition&gt;<br>
+                </div>
+                <div class="question">
+                    <label>14. How do you include an external CSS file in HTML?</label>
+                    <input type="radio" name="q14" value="A"> &lt;link rel="stylesheet" href="styles.css"&gt;<br>
+                    <input type="radio" name="q14" value="B"> &lt;style src="styles.css"&gt;<br>
+                    <input type="radio" name="q14" value="C"> &lt;css href="styles.css"&gt;<br>
+                    <input type="radio" name="q14" value="D"> &lt;script src="styles.css"&gt;<br>
+                </div>
+                <div class="question">
+                    <label>15. What HTML tag is used to define a block of code?</label>
+                    <input type="radio" name="q15" value="A"> &lt;pre&gt;<br>
+                    <input type="radio" name="q15" value="B"> &lt;code&gt;<br>
+                    <input type="radio" name="q15" value="C"> &lt;script&gt;<br>
+                    <input type="radio" name="q15" value="D"> &lt;block&gt;<br>
+                </div>
+                <div class="question">
+                    <label>16. What does the &lt;title&gt; tag define?</label>
+                    <input type="radio" name="q16" value="A"> The title of the document<br>
+                    <input type="radio" name="q16" value="B"> The heading of the page<br>
+                    <input type="radio" name="q16" value="C"> The main content<br>
+                    <input type="radio" name="q16" value="D"> The footer<br>
+                </div>
+                <div class="question">
+                    <label>17. Which tag is used to define a table caption?</label>
+                    <input type="radio" name="q17" value="A"> &lt;caption&gt;<br>
+                    <input type="radio" name="q17" value="B"> &lt;header&gt;<br>
+                    <input type="radio" name="q17" value="C"> &lt;title&gt;<br>
+                    <input type="radio" name="q17" value="D"> &lt;label&gt;<br>
+                </div>
+                <div class="question">
+                    <label>18. What HTML attribute specifies the ID of an element?</label>
+                    <input type="radio" name="q18" value="A"> id<br>
+                    <input type="radio" name="q18" value="B"> class<br>
+                    <input type="radio" name="q18" value="C"> name<br>
+                    <input type="radio" name="q18" value="D"> type<br>
+                </div>
+                <div class="question">
+                    <label>19. Which tag is used to define a text area?</label>
+                    <input type="radio" name="q19" value="A"> &lt;textarea&gt;<br>
+                    <input type="radio" name="q19" value="B"> &lt;input type="text"&gt;<br>
+                    <input type="radio" name="q19" value="C"> &lt;text&gt;<br>
+                    <input type="radio" name="q19" value="D"> &lt;field&gt;<br>
+                </div>
+                <div class="question">
+                    <label>20. What does the &lt;base&gt; tag specify in HTML?</label>
+                    <input type="radio" name="q20" value="A"> The base URL for relative URLs<br>
+                    <input type="radio" name="q20" value="B"> The base font size<br>
+                    <input type="radio" name="q20" value="C"> The base color<br>
+                    <input type="radio" name="q20" value="D"> The base width<br>
+                </div>
+                <div class="result" id="result"></div>
+                <button type="button" onclick="checkAnswers()">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Course. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function checkAnswers() {
+            var score = 0;
+            var totalQuestions = 20;
+            var correctAnswers = {
+                q1: "A",
+                q2: "A",
+                q3: "A",
+                q4: "A",
+                q5: "A",
+                q6: "A",
+                q7: "A",
+                q8: "A",
+                q9: "A",
+                q10: "A",
+                q11: "A",
+                q12: "A",
+                q13: "A",
+                q14: "A",
+                q15: "A",
+                q16: "A",
+                q17: "A",
+                q18: "A",
+                q19: "A",
+                q20: "A"
+            };
+    
+            // Clear previous results
+            document.querySelectorAll('.question').forEach(question => {
+                question.querySelectorAll('input[type="radio"]').forEach(radio => {
+                    radio.parentNode.classList.remove('correct', 'incorrect');
+                });
+            });
+    
+            for (var i = 1; i <= totalQuestions; i++) {
+                var answer = document.querySelector(`input[name="q${i}"]:checked`);
+                var questionElement = document.querySelector(`.question:nth-of-type(${i})`);
+    
+                if (answer && answer.value === correctAnswers[`q${i}`]) {
+                    score++;
+                    answer.parentNode.classList.add('correct');
+                } else {
+                    answer?.parentNode.classList.add('incorrect');
+                }
+            }
+    
+            document.getElementById("result").textContent = `You scored ${score} out of ${totalQuestions}.`;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 MathML &lt;semantics&gt; Tag</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Course</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="semantics-tag">
+            <h2>HTML5 MathML &lt;semantics&gt; Tag</h2>
+            <p>The <code>&lt;semantics&gt;</code> element is used to provide additional semantic information about a MathML expression. It allows for embedding metadata or annotations that enhance the interpretation of mathematical content.</p>
+
+            <h3>Basic Usage</h3>
+            <pre><code>&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+    &lt;semantics&gt;
+        &lt;mrow&gt;
+            &lt;mi&gt;f&lt;/mi&gt;
+            &lt;mo&gt;(</mo&gt;
+            &lt;mi&gt;x&lt;/mi&gt;
+            &lt;mo&gt;)&lt;/mo&gt;
+        &lt;/mrow&gt;
+        &lt;annotation encoding="application/x-tex"&gt;f(x)&lt;/annotation&gt;
+    &lt;/semantics&gt;
+&lt;/math&gt;</code></pre>
+
+            <h3>Attributes</h3>
+            <ul>
+                <li><strong>encoding</strong>: Specifies the encoding used for the embedded annotation, such as LaTeX or MathML.</li>
+            </ul>
+
+            <h3>Conclusion</h3>
+            <p>The <code>&lt;semantics&gt;</code> tag enhances the representation of mathematical content by including additional annotations or metadata, improving accessibility and interpretation.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Course. All rights reserved.</p>
+    </footer>
+</body>
+</html>

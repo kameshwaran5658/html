@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Course | Practice Quiz 1</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .quiz-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .result {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .question input[type="radio"]:checked + label {
+            color: red;
+        }
+        .incorrect {
+            color: red;
+        }
+        .correct {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Course</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="quiz-container">
+            <h2>HTML Course | Practice Quiz 1</h2>
+            <form id="quiz-form">
+                <div class="question">
+                    <label>1. What does HTML stand for?</label>
+                    <input type="radio" name="q1" value="A"> Hypertext Markup Language<br>
+                    <input type="radio" name="q1" value="B"> Hyperlink and Text Markup Language<br>
+                    <input type="radio" name="q1" value="C"> Hypertext Multiple Language<br>
+                    <input type="radio" name="q1" value="D"> Hyperlink Markup Language<br>
+                </div>
+                <div class="question">
+                    <label>2. What is the correct HTML element for inserting a line break?</label>
+                    <input type="radio" name="q2" value="A"> &lt;br&gt;<br>
+                    <input type="radio" name="q2" value="B"> &lt;break&gt;<br>
+                    <input type="radio" name="q2" value="C"> &lt;lb&gt;<br>
+                    <input type="radio" name="q2" value="D"> &lt;linebreak&gt;<br>
+                </div>
+                <div class="question">
+                    <label>3. Which HTML tag is used to define an internal style sheet?</label>
+                    <input type="radio" name="q3" value="A"> &lt;style&gt;<br>
+                    <input type="radio" name="q3" value="B"> &lt;script&gt;<br>
+                    <input type="radio" name="q3" value="C"> &lt;css&gt;<br>
+                    <input type="radio" name="q3" value="D"> &lt;link&gt;<br>
+                </div>
+                <div class="question">
+                    <label>4. Which attribute specifies the URL of an image?</label>
+                    <input type="radio" name="q4" value="A"> src<br>
+                    <input type="radio" name="q4" value="B"> href<br>
+                    <input type="radio" name="q4" value="C"> alt<br>
+                    <input type="radio" name="q4" value="D"> link<br>
+                </div>
+                <div class="question">
+                    <label>5. How do you make a list that lists items with bullets?</label>
+                    <input type="radio" name="q5" value="A"> &lt;ul&gt;<br>
+                    <input type="radio" name="q5" value="B"> &lt;ol&gt;<br>
+                    <input type="radio" name="q5" value="C"> &lt;dl&gt;<br>
+                    <input type="radio" name="q5" value="D"> &lt;list&gt;<br>
+                </div>
+                <div class="question">
+                    <label>6. What does the &lt;a&gt; tag in HTML stand for?</label>
+                    <input type="radio" name="q6" value="A"> Anchor<br>
+                    <input type="radio" name="q6" value="B"> Address<br>
+                    <input type="radio" name="q6" value="C"> Align<br>
+                    <input type="radio" name="q6" value="D"> Application<br>
+                </div>
+                <div class="question">
+                    <label>7. Which HTML element is used to define a hyperlink?</label>
+                    <input type="radio" name="q7" value="A"> &lt;a&gt;<br>
+                    <input type="radio" name="q7" value="B"> &lt;link&gt;<br>
+                    <input type="radio" name="q7" value="C"> &lt;href&gt;<br>
+                    <input type="radio" name="q7" value="D"> &lt;hyperlink&gt;<br>
+                </div>
+                <div class="question">
+                    <label>8. What is the correct HTML for creating a button?</label>
+                    <input type="radio" name="q8" value="A"> &lt;button&gt;Click Me&lt;/button&gt;<br>
+                    <input type="radio" name="q8" value="B"> &lt;btn&gt;Click Me&lt;/btn&gt;<br>
+                    <input type="radio" name="q8" value="C"> &lt;input type="button"&gt;Click Me&lt;/input&gt;<br>
+                    <input type="radio" name="q8" value="D"> &lt;click&gt;Click Me&lt;/click&gt;<br>
+                </div>
+                <div class="question">
+                    <label>9. How do you create a drop-down list in HTML?</label>
+                    <input type="radio" name="q9" value="A"> &lt;select&gt;<br>
+                    <input type="radio" name="q9" value="B"> &lt;dropdown&gt;<br>
+                    <input type="radio" name="q9" value="C"> &lt;list&gt;<br>
+                    <input type="radio" name="q9" value="D"> &lt;option&gt;<br>
+                </div>
+                <div class="question">
+                    <label>10. Which tag is used to define a table row?</label>
+                    <input type="radio" name="q10" value="A"> &lt;tr&gt;<br>
+                    <input type="radio" name="q10" value="B"> &lt;td&gt;<br>
+                    <input type="radio" name="q10" value="C"> &lt;th&gt;<br>
+                    <input type="radio" name="q10" value="D"> &lt;table&gt;<br>
+                </div>
+                <div class="question">
+                    <label>11. How do you define a header in an HTML5 document?</label>
+                    <input type="radio" name="q11" value="A"> &lt;header&gt;<br>
+                    <input type="radio" name="q11" value="B"> &lt;head&gt;<br>
+                    <input type="radio" name="q11" value="C"> &lt;nav&gt;<br>
+                    <input type="radio" name="q11" value="D"> &lt;top&gt;<br>
+                </div>
+                <div class="question">
+                    <label>12. What HTML tag is used to embed an image?</label>
+                    <input type="radio" name="q12" value="A"> &lt;img&gt;<br>
+                    <input type="radio" name="q12" value="B"> &lt;picture&gt;<br>
+                    <input type="radio" name="q12" value="C"> &lt;image&gt;<br>
+                    <input type="radio" name="q12" value="D"> &lt;photo&gt;<br>
+                </div>
+                <div class="question">
+                    <label>13. Which attribute specifies an alternate text for an image?</label>
+                    <input type="radio" name="q13" value="A"> alt<br>
+                    <input type="radio" name="q13" value="B"> src<br>
+                    <input type="radio" name="q13" value="C"> title<br>
+                    <input type="radio" name="q13" value="D"> href<br>
+                </div>
+                <div class="question">
+                    <label>14. How do you create a checkbox in HTML?</label>
+                    <input type="radio" name="q14" value="A"> &lt;input type="checkbox"&gt;<br>
+                    <input type="radio" name="q14" value="B"> &lt;checkbox&gt;<br>
+                    <input type="radio" name="q14" value="C"> &lt;input type="check"&gt;<br>
+                    <input type="radio" name="q14" value="D"> &lt;check&gt;<br>
+                </div>
+                <div class="question">
+                    <label>15. Which HTML tag is used to define a form?</label>
+                    <input type="radio" name="q15" value="A"> &lt;form&gt;<br>
+                    <input type="radio" name="q15" value="B"> &lt;input&gt;<br>
+                    <input type="radio" name="q15" value="C"> &lt;submit&gt;<br>
+                    <input type="radio" name="q15" value="D"> &lt;field&gt;<br>
+                </div>
+                <div class="question">
+                    <label>16. How do you create a radio button in HTML?</label>
+                    <input type="radio" name="q16" value="A"> &lt;input type="radio"&gt;<br>
+                    <input type="radio" name="q16" value="B"> &lt;radio&gt;<br>
+                    <input type="radio" name="q16" value="C"> &lt;input type="button"&gt;<br>
+                    <input type="radio" name="q16" value="D"> &lt;input type="checkbox"&gt;<br>
+                </div>
+                <div class="question">
+                    <label>17. Which tag is used to define a table header cell?</label>
+                    <input type="radio" name="q17" value="A"> &lt;th&gt;<br>
+                    <input type="radio" name="q17" value="B"> &lt;td&gt;<br>
+                    <input type="radio" name="q17" value="C"> &lt;tr&gt;<br>
+                    <input type="radio" name="q17" value="D"> &lt;table&gt;<br>
+                </div>
+                <div class="question">
+                    <label>18. How do you create a hyperlink in HTML?</label>
+                    <input type="radio" name="q18" value="A"> &lt;a href="url"&gt;<br>
+                    <input type="radio" name="q18" value="B"> &lt;link href="url"&gt;<br>
+                    <input type="radio" name="q18" value="C"> &lt;url&gt;<br>
+                    <input type="radio" name="q18" value="D"> &lt;hyperlink href="url"&gt;<br>
+                </div>
+                <div class="question">
+                    <label>19. Which HTML element is used to define a navigation section?</label>
+                    <input type="radio" name="q19" value="A"> &lt;nav&gt;<br>
+                    <input type="radio" name="q19" value="B"> &lt;navigation&gt;<br>
+                    <input type="radio" name="q19" value="C"> &lt;menu&gt;<br>
+                    <input type="radio" name="q19" value="D"> &lt;links&gt;<br>
+                </div>
+                <div class="question">
+                    <label>20. What is the purpose of the &lt;meta&gt; tag in HTML?</label>
+                    <input type="radio" name="q20" value="A"> To define metadata<br>
+                    <input type="radio" name="q20" value="B"> To define the document title<br>
+                    <input type="radio" name="q20" value="C"> To define hyperlinks<br>
+                    <input type="radio" name="q20" value="D"> To define style sheets<br>
+                </div>
+                <div class="result" id="result"></div>
+                <button type="button" onclick="checkAnswers()">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Course. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function checkAnswers() {
+            var score = 0;
+            var totalQuestions = 20;
+            var correctAnswers = {
+                q1: "A",
+                q2: "A",
+                q3: "A",
+                q4: "A",
+                q5: "A",
+                q6: "A",
+                q7: "A",
+                q8: "A",
+                q9: "A",
+                q10: "A",
+                q11: "A",
+                q12: "A",
+                q13: "A",
+                q14: "A",
+                q15: "A",
+                q16: "A",
+                q17: "A",
+                q18: "A",
+                q19: "A",
+                q20: "A"
+            };
+    
+            // Clear previous results
+            document.querySelectorAll('.question').forEach(question => {
+                question.querySelectorAll('input[type="radio"]').forEach(radio => {
+                    radio.parentNode.classList.remove('correct', 'incorrect');
+                });
+            });
+    
+            for (var i = 1; i <= totalQuestions; i++) {
+                var answer = document.querySelector(`input[name="q${i}"]:checked`);
+                var questionElement = document.querySelector(`.question:nth-of-type(${i})`);
+    
+                if (answer && answer.value === correctAnswers[`q${i}`]) {
+                    score++;
+                    answer.parentNode.classList.add('correct');
+                } else {
+                    answer?.parentNode.classList.add('incorrect');
+                }
+            }
+    
+            document.getElementById("result").textContent = `You scored ${score} out of ${totalQuestions}.`;
+        }
+    </script>
+    
+</body>
+</html>

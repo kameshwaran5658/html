@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Attribute</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Course</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="form-attribute">
+            <h2>HTML Form Attributes</h2>
+            <p>Form attributes define how a form behaves and interacts with the server. Key attributes include <code>action</code>, <code>method</code>, and <code>enctype</code>.</p>
+
+            <h3>Action Attribute</h3>
+            <p>The <code>action</code> attribute specifies the URL where the form data will be sent. If omitted, the form data is sent to the same URL as the form.</p>
+
+            <h3>Method Attribute</h3>
+            <p>The <code>method</code> attribute defines the HTTP method to be used when submitting the form. Common values are <code>GET</code> and <code>POST</code>.</p>
+
+            <h3>Enctype Attribute</h3>
+            <p>The <code>enctype</code> attribute specifies how the form data should be encoded. The default value is <code>application/x-www-form-urlencoded</code>, which is suitable for most forms. For file uploads, use <code>multipart/form-data</code>.</p>
+
+            <h3>Example</h3>
+            <pre><code>&lt;form action="/submit" method="post" enctype="multipart/form-data"&gt;
+    &lt;input type="text" name="username"&gt;
+    &lt;input type="file" name="file"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+
+            <h3>Usage</h3>
+            <p>Proper use of form attributes ensures correct data submission and handling, improving user experience and data processing.</p>
+
+            <h3>Conclusion</h3>
+            <p>Understanding form attributes helps in creating effective and functional web forms, optimizing data submission and user interaction.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Course. All rights reserved.</p>
+    </footer>
+</body>
+</html>

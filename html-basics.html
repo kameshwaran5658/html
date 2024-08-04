@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Course</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+             
+                <li><a href="html-basic-elements.html"><i class="fas fa-tags"></i> HTML Basic Elements</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="basics">
+            <h2>HTML Basics</h2>
+            <p>Welcome to the HTML Basics section. This section will cover the fundamental concepts of HTML and provide you with the foundation to build web pages.</p>
+            <h3>Basic HTML Document Structure</h3>
+            <p>Every HTML document starts with a <strong>DOCTYPE declaration</strong>, followed by an <strong>html</strong> element that contains the <strong>head</strong> and <strong>body</strong> elements.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Basic HTML Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+            <h3>HTML Headings</h3>
+            <p>HTML provides six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, with <code>&lt;h1&gt;</code> being the highest (or most important) level and <code>&lt;h6&gt;</code> being the lowest.</p>
+            <pre><code>&lt;h1&gt;This is a top level heading&lt;/h1&gt;
+&lt;h2&gt;This is a second level heading&lt;/h2&gt;
+&lt;h3&gt;This is a third level heading&lt;/h3&gt;
+&lt;h4&gt;This is a fourth level heading&lt;/h4&gt;
+&lt;h5&gt;This is a fifth level heading&lt;/h5&gt;
+&lt;h6&gt;This is a sixth level heading&lt;/h6&gt;
+            </code></pre>
+            <h3>HTML Paragraphs</h3>
+            <p>Paragraphs are defined with the <code>&lt;p&gt;</code> tag. A paragraph always starts on a new line and is usually a block of text.</p>
+            <pre><code>&lt;p&gt;This is a paragraph of text in HTML.&lt;/p&gt;</code></pre>
+            <h3>HTML Links</h3>
+            <p>Links are defined with the <code>&lt;a&gt;</code> (anchor) tag. The <code>href</code> attribute specifies the URL of the page the link goes to:</p>
+            <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+            <h3>HTML Images</h3>
+            <p>Images are defined with the <code>&lt;img&gt;</code> tag. The <code>src</code> attribute specifies the path to the image:</p>
+            <pre><code>&lt;img src="image.jpg" alt="Description of image"&gt;</code></pre>
+            <h3>HTML Lists</h3>
+            <p>There are two types of lists in HTML: ordered lists (<code>&lt;ol&gt;</code>) and unordered lists (<code>&lt;ul&gt;</code>). List items are defined with the <code>&lt;li&gt;</code> tag:</p>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+            </code></pre>
+            <h3>HTML Attributes</h3>
+            <p>Attributes provide additional information about HTML elements. They are always included in the opening tag and usually come in name/value pairs like <code>name="value"</code>:</p>
+            <pre><code>&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example&lt;/a&gt;</code></pre>
+            <h3>HTML Comments</h3>
+            <p>Comments in HTML are not displayed in the browser, but they can help document your HTML code. Comments are added using <code>&lt;!-- --&gt;</code>:</p>
+            <pre><code>&lt;!-- This is a comment --&gt;</code></pre>
+            <h3>HTML Editors</h3>
+            <p>You can write HTML using a simple text editor like Notepad or more advanced code editors like Visual Studio Code, Sublime Text, or Atom.</p>
+            <p>Most modern code editors provide features like syntax highlighting, code completion, and debugging tools to enhance your HTML development experience.</p>
+            <h3>Conclusion</h3>
+            <p>In this section, you have learned about the basic structure of an HTML document and some of the essential HTML tags and attributes. With this knowledge, you can start creating simple web pages and gradually build more complex and feature-rich websites.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Course. All rights reserved.</p>
+    </footer>
+</body>
+</html>

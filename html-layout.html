@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Course</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="layout">
+            <h2>HTML Layout</h2>
+            <p>In this section, we will explore the layout structure of HTML documents. Understanding layout is essential for designing web pages and organizing content effectively.</p>
+            <h3>HTML Document Structure</h3>
+            <p>The basic structure of an HTML document includes the following elements:</p>
+            <ul>
+                <li><code>&lt;html&gt;&lt;/html&gt;</code> - Root element that contains the entire HTML document.</li>
+                <li><code>&lt;head&gt;&lt;/head&gt;</code> - Contains meta-information about the document, such as title and link to stylesheets.</li>
+                <li><code>&lt;body&gt;&lt;/body&gt;</code> - Contains the content of the document that is displayed in the web browser.</li>
+            </ul>
+            <h3>HTML Layout Elements</h3>
+            <p>HTML provides several elements to structure your web page layout:</p>
+            <ul>
+                <li><code>&lt;header&gt;&lt;/header&gt;</code> - Defines the header section of the document, often used for navigation, branding, etc.</li>
+                <li><code>&lt;nav&gt;&lt;/nav&gt;</code> - Defines a navigation section with links.</li>
+                <li><code>&lt;main&gt;&lt;/main&gt;</code> - Defines the main content area of the document.</li>
+                <li><code>&lt;section&gt;&lt;/section&gt;</code> - Defines a section within the document, used to group related content.</li>
+                <li><code>&lt;article&gt;&lt;/article&gt;</code> - Defines a self-contained article or piece of content.</li>
+                <li><code>&lt;aside&gt;&lt;/aside&gt;</code> - Defines content that is tangentially related to the content around it.</li>
+                <li><code>&lt;footer&gt;&lt;/footer&gt;</code> - Defines the footer section of the document, often used for copyright and contact information.</li>
+            </ul>
+            <h3>Example Layout</h3>
+            <p>Here is an example of a basic HTML layout using these elements:</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;HTML Layout Example&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;My Website&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;section id="home"&gt;
+            &lt;h2&gt;Welcome to My Website&lt;/h2&gt;
+            &lt;p&gt;This is the home section.&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section id="about"&gt;
+            &lt;h2&gt;About Me&lt;/h2&gt;
+            &lt;p&gt;This is the about section.&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section id="contact"&gt;
+            &lt;h2&gt;Contact&lt;/h2&gt;
+            &lt;p&gt;This is the contact section.&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2024 My Website. All rights reserved.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+            <h3>Responsive Layout</h3>
+            <p>To make your HTML layout responsive and work on different screen sizes, you can use CSS media queries. Here's an example:</p>
+            <pre><code>@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+}
+            </code></pre>
+            <h3>Conclusion</h3>
+            <p>Understanding HTML layout is crucial for creating well-structured and organized web pages. With these layout elements, you can effectively manage and present your content.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Course. All rights reserved.</p>
+    </footer>
+</body>
+</html>

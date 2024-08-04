@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas Complete Reference</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Course</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="canvas-reference">
+            <h2>HTML Canvas Complete Reference</h2>
+            <p>The <code>&lt;canvas&gt;</code> element is used to draw graphics on the fly via JavaScript. It provides a space where you can create and manipulate images, shapes, and animations directly within your web page.</p>
+
+            <h3>Basic Structure</h3>
+            <p>The <code>&lt;canvas&gt;</code> element itself does not display any graphics; it provides a blank space where graphics can be drawn using JavaScript.</p>
+
+            <h3>Example</h3>
+            <pre><code>&lt;canvas id="myCanvas" width="200" height="200"&gt;&lt;/canvas&gt;
+&lt;script&gt;
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+
+    // Draw a red rectangle
+    ctx.fillStyle = 'red';
+    ctx.fillRect(10, 10, 150, 100);
+
+    // Draw a blue circle
+    ctx.beginPath();
+    ctx.arc(100, 150, 50, 0, Math.PI * 2);
+    ctx.fillStyle = 'blue';
+    ctx.fill();
+    &lt;/script&gt;
+</code> 
+</pre>
+
+            <h3>Common Canvas Methods</h3>
+            <ul>
+                <li><strong>getContext(type)</strong>: Returns a drawing context on the canvas.</li>
+                <li><strong>fillRect(x, y, width, height)</strong>: Draws a filled rectangle.</li>
+                <li><strong>beginPath()</strong>: Starts a new path.</li>
+                <li><strong>arc(x, y, radius, startAngle, endAngle)</strong>: Draws an arc.</li>
+                <li><strong>fill()</strong>: Fills the current path.</li>
+            </ul>
+
+            <h3>Usage</h3>
+            <p>The <code>&lt;canvas&gt;</code> element is used for creating games, graphs, and other visual content that requires dynamic and interactive graphics.</p>
+
+            <h3>Conclusion</h3>
+            <p>Mastering the <code>&lt;canvas&gt;</code> element allows for the creation of rich, interactive graphics and animations directly within web applications.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Course. All rights reserved.</p>
+    </footer>
+</body>
+</html>

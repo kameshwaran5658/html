@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Audio Tag</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Course</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="audio-tag">
+            <h2>HTML Audio Tag</h2>
+            <p>The <code>&lt;audio&gt;</code> element is used to embed audio content in a web page. It allows for native audio playback and supports multiple audio formats.</p>
+
+            <h3>Basic Usage</h3>
+            <p>The <code>&lt;audio&gt;</code> tag supports various attributes to control audio playback. You can specify multiple <code>&lt;source&gt;</code> elements to provide different audio formats for better browser compatibility.</p>
+
+            <h3>Example</h3>
+            <pre><code>&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    &lt;source src="audio.ogg" type="audio/ogg"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;</code></pre>
+
+            <h3>Attributes</h3>
+            <ul>
+                <li><strong>controls</strong>: Displays playback controls such as play, pause, and volume.</li>
+                <li><strong>autoplay</strong>: Starts playback automatically when the page loads.</li>
+                <li><strong>loop</strong>: Repeats the audio when it finishes.</li>
+                <li><strong>muted</strong>: Mutes the audio.</li>
+                <li><strong>preload</strong>: Specifies how the browser should load the audio. Values include <code>auto</code>, <code>metadata</code>, and <code>none</code>.</li>
+            </ul>
+
+            <h3>Conclusion</h3>
+            <p>The <code>&lt;audio&gt;</code> element provides a simple and effective way to embed audio content in web pages, with built-in controls and support for various audio formats.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Course. All rights reserved.</p>
+    </footer>
+</body>
+</html>

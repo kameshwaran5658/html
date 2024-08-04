@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Tag</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Course</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="form-tag">
+            <h2>HTML <code>&lt;form&gt;</code> Tag</h2>
+            <p>The <code>&lt;form&gt;</code> tag is used to create a form for user input. It can contain various input elements and is used to collect data from users.</p>
+
+            <h3>Attributes</h3>
+            <ul>
+                <li><strong>action</strong>: Specifies the URL where the form data will be sent when the form is submitted.</li>
+                <li><strong>method</strong>: Defines the HTTP method (GET or POST) used to send form data.</li>
+                <li><strong>enctype</strong>: Specifies how the form data should be encoded (e.g., <code>application/x-www-form-urlencoded</code>, <code>multipart/form-data</code>).</li>
+                <li><strong>target</strong>: Specifies where to open the response (e.g., _self, _blank, _parent).</li>
+            </ul>
+
+            <h3>Example</h3>
+            <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;input type="text" name="username" placeholder="Enter your username"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+
+            <h3>Usage</h3>
+            <p>The <code>&lt;form&gt;</code> tag is crucial for creating interactive web pages that require user input and data submission.</p>
+
+            <h3>Conclusion</h3>
+            <p>The <code>&lt;form&gt;</code> tag is the foundation for user interaction on websites, enabling data collection and submission.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML Course. All rights reserved.</p>
+    </footer>
+</body>
+</html>
